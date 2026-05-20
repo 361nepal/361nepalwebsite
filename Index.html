@@ -1,1 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>
+    361° Nepal | Official Authorized Dealer of 361° in Nepal
+  </title>
+
+  <meta name="description"
+    content="Sarba Siddhi Impex Pvt. Ltd. is the official authorized dealer of 361° in Nepal. Explore premium running shoes, basketball shoes, sportswear, and lifestyle collections." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#050505;
+      color:#fff;
+      overflow-x:hidden;
+    }
+
+    body::-webkit-scrollbar{
+      width:8px;
+    }
+
+    body::-webkit-scrollbar-thumb{
+      background:#ff4d00;
+      border-radius:20px;
+    }
+
+    header{
+      position:fixed;
+      top:0;
+      width:100%;
+      z-index:999;
+      background:rgba(0,0,0,0.5);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(255,255,255,0.08);
+    }
+
+    nav{
+      width:90%;
+      margin:auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:16px 0;
+    }
+
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .logo-box{
+      width:60px;
+      height:60px;
+      border-radius:18px;
+      overflow:hidden;
+      background:#111;
+      box-shadow:0 0 25px rgba(255,60,0,0.4);
+    }
+
+    .logo-box img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .logo-text h1{
+      font-size:20px;
+    }
+
+    .logo-text span{
+      font-size:12px;
+      color:#bbb;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:28px;
+    }
+
+    .nav-links a{
+      color:#fff;
+      text-decoration:none;
+      position:relative;
+    }
+
+    .nav-links a::after{
+      content:'';
+      position:absolute;
+      left:0;
+      bottom:-7px;
+      width:0;
+      height:2px;
+      background:#ff4d00;
+      transition:0.3s;
+    }
+
+    .nav-links a:hover::after{
+      width:100%;
+    }
+
+    .mobile-menu{
+      display:none;
+      font-size:30px;
+      cursor:pointer;
+    }
+
+    /* HERO */
+
+    .hero{
+      min-height:100vh;
+      position:relative;
+      display:flex;
+      align-items:center;
+      overflow:hidden;
+    }
+
+    .slides{
+      position:absolute;
+      width:100%;
+      height:100%;
+      z-index:-2;
+    }
+
+    .slide{
+      position:absolute;
+      width:100%;
+      height:100%;
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      opacity:0;
+      animation:slideShow 18s infinite;
+    }
+
+    /* YOUR OWN HERO IMAGES */
+
+    .slide:nth-child(1){
+      background-image:url('images/hero1.jpg');
+      animation-delay:0s;
+    }
+
+    .slide:nth-child(2){
+      background-image:url('images/hero2.jpg');
+      animation-delay:6s;
+    }
+
+    .slide:nth-child(3){
+      background-image:url('images/hero3.jpg');
+      animation-delay:12s;
+    }
+
+    @keyframes slideShow{
+
+      0%{
+        opacity:0;
+        transform:scale(1.1);
+      }
+
+      10%{
+        opacity:1;
+      }
+
+      30%{
+        opacity:1;
+        transform:scale(1);
+      }
+
+      40%{
+        opacity:0;
+      }
+
+      100%{
+        opacity:0;
+      }
+
+    }
+
+    .overlay{
+      position:absolute;
+      inset:0;
+      background:linear-gradient(
+      to right,
+      rgba(0,0,0,0.88),
+      rgba(0,0,0,0.35));
+      z-index:-1;
+    }
+
+    .hero-content{
+      width:90%;
+      max-width:1300px;
+      margin:auto;
+    }
+
+    .hero-content h2{
+      font-size:70px;
+      line-height:1.1;
+      max-width:820px;
+      margin-bottom:25px;
+    }
+
+    .hero-content span{
+      background:linear-gradient(90deg,#ff3c00,#ffb700);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .hero-content p{
+      color:#ddd;
+      max-width:650px;
+      line-height:1.8;
+      font-size:18px;
+      margin-bottom:35px;
+    }
+
+    .btns{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:15px 34px;
+      border-radius:50px;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.4s;
+    }
+
+    .primary{
+      background:linear-gradient(90deg,#ff3c00,#ff9900);
+      color:#fff;
+      box-shadow:0 0 25px rgba(255,60,0,0.4);
+    }
+
+    .secondary{
+      border:1px solid rgba(255,255,255,0.15);
+      background:rgba(255,255,255,0.06);
+      color:#fff;
+    }
+
+    .btn:hover{
+      transform:translateY(-5px);
+    }
+
+    section{
+      padding:110px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:60px;
+    }
+
+    .section-title h2{
+      font-size:48px;
+      margin-bottom:15px;
+    }
+
+    .section-title p{
+      color:#aaa;
+      max-width:700px;
+      margin:auto;
+      line-height:1.8;
+    }
+
+    .top-filter{
+      display:flex;
+      justify-content:center;
+      gap:15px;
+      flex-wrap:wrap;
+      margin-bottom:40px;
+    }
+
+    .filter-btn{
+      padding:14px 28px;
+      border:none;
+      border-radius:50px;
+      background:rgba(255,255,255,0.08);
+      color:#fff;
+      cursor:pointer;
+      transition:0.4s;
+      font-weight:600;
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover{
+      background:linear-gradient(90deg,#ff3c00,#ff9900);
+      transform:translateY(-4px);
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:25px;
+    }
+
+    .gallery-card{
+      position:relative;
+      overflow:hidden;
+      border-radius:28px;
+    }
+
+    .gallery-card img{
+      width:100%;
+      height:360px;
+      object-fit:cover;
+      transition:0.5s;
+    }
+
+    .gallery-card:hover img{
+      transform:scale(1.08);
+    }
+
+    .gallery-overlay{
+      position:absolute;
+      inset:0;
+      background:linear-gradient(to top,rgba(0,0,0,0.9),transparent);
+      display:flex;
+      align-items:flex-end;
+      padding:25px;
+    }
+
+    .gallery-overlay h3{
+      font-size:22px;
+    }
+
+    .video-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:30px;
+    }
+
+    .video-card{
+      background:#111;
+      border-radius:28px;
+      overflow:hidden;
+    }
+
+    .video-card video{
+      width:100%;
+      height:240px;
+      object-fit:cover;
+      background:#000;
+    }
+
+    .video-card h3{
+      padding:20px;
+    }
+
+    .dark-form-container{
+      padding:18px;
+      border-radius:35px;
+      overflow:hidden;
+      background:#111;
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
+    .dark-form-container iframe{
+      width:100%;
+      height:1000px;
+      border:none;
+      border-radius:25px;
+      filter:
+      invert(0.93)
+      hue-rotate(180deg)
+      contrast(0.92)
+      brightness(0.92);
+    }
+
+    footer{
+      background:#0a0a0a;
+      padding:80px 8% 40px;
+      border-top:1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:40px;
+    }
+
+    .socials{
+      display:flex;
+      gap:15px;
+      margin-top:20px;
+    }
+
+    .socials a{
+      width:50px;
+      height:50px;
+      border-radius:50%;
+      background:rgba(255,255,255,0.08);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    .socials a:hover{
+      background:#ff3c00;
+    }
+
+    .map-frame{
+      width:100%;
+      height:300px;
+      border:none;
+      border-radius:25px;
+      filter:grayscale(1) invert(92%);
+    }
+
+    .copyright{
+      text-align:center;
+      margin-top:40px;
+      padding-top:30px;
+      border-top:1px solid rgba(255,255,255,0.08);
+      color:#888;
+    }
+
+    @media(max-width:900px){
+
+      .hero-content h2{
+        font-size:48px;
+      }
+
+      .nav-links{
+        position:absolute;
+        top:90px;
+        right:-100%;
+        width:260px;
+        height:400px;
+        background:#111;
+        flex-direction:column;
+        padding:40px;
+        transition:0.4s;
+        border-radius:20px;
+      }
+
+      .nav-links.active{
+        right:20px;
+      }
+
+      .mobile-menu{
+        display:block;
+      }
+
+    }
+
+    @media(max-width:600px){
+
+      .hero-content{
+        text-align:center;
+        padding-top:100px;
+      }
+
+      .hero-content h2{
+        font-size:38px;
+      }
+
+      .btn{
+        width:100%;
+        text-align:center;
+      }
+
+      .gallery-card img{
+        height:280px;
+      }
+
+      .section-title h2{
+        font-size:34px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <nav>
+
+      <div class="logo">
+
+        <!-- YOUR LOGO -->
+
+        <div class="logo-box">
+          <img src="images/logo.png" alt="361 Nepal Logo">
+        </div>
+
+        <div class="logo-text">
+
+          <h1>361° Nepal</h1>
+
+          <span>
+            Sarba Siddhi Impex Pvt. Ltd.
+          </span>
+
+        </div>
+
+      </div>
+
+      <div class="nav-links" id="navLinks">
+
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#videos">Videos</a>
+        <a href="#form-section">Form</a>
+        <a href="#contact">Contact</a>
+
+      </div>
+
+      <div class="mobile-menu" id="menuBtn">
+        ☰
+      </div>
+
+    </nav>
+
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero" id="home">
+
+    <div class="slides">
+
+      <div class="slide"></div>
+      <div class="slide"></div>
+      <div class="slide"></div>
+
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+      <h2>
+        Official Authorized Dealer of
+        <span>361°</span> in Nepal
+      </h2>
+
+      <p>
+        Premium running shoes, basketball shoes,
+        sportswear, and lifestyle collections.
+      </p>
+
+      <div class="btns">
+
+        <a href="#gallery" class="btn primary">
+          Explore Collection
+        </a>
+
+        <a href="#contact" class="btn secondary">
+          Contact Us
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALLERY -->
+
+  <section id="gallery">
+
+    <div class="section-title">
+
+      <h2>Featured Collection</h2>
+
+      <p>
+        Explore Men, Women, and Unisex collections.
+      </p>
+
+    </div>
+
+    <div class="top-filter">
+
+      <button class="filter-btn active" data-filter="all">
+        All
+      </button>
+
+      <button class="filter-btn" data-filter="men">
+        Men
+      </button>
+
+      <button class="filter-btn" data-filter="women">
+        Women
+      </button>
+
+      <button class="filter-btn" data-filter="unisex">
+        Unisex
+      </button>
+
+    </div>
+
+    <div class="gallery">
+
+      <!-- YOUR OWN IMAGES -->
+
+      <div class="gallery-card men">
+
+        <img src="images/men.jpg" alt="Men Shoes">
+
+        <div class="gallery-overlay">
+          <h3>Men Collection</h3>
+        </div>
+
+      </div>
+
+      <div class="gallery-card women">
+
+        <img src="images/women.jpg" alt="Women Shoes">
+
+        <div class="gallery-overlay">
+          <h3>Women Collection</h3>
+        </div>
+
+      </div>
+
+      <div class="gallery-card unisex">
+
+        <img src="images/unisex.jpg" alt="Unisex Collection">
+
+        <div class="gallery-overlay">
+          <h3>Unisex Collection</h3>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- VIDEOS -->
+
+  <section id="videos">
+
+    <div class="section-title">
+
+      <h2>Latest Videos</h2>
+
+      <p>
+        Watch our latest product showcases and sports collections.
+      </p>
+
+    </div>
+
+    <div class="video-grid">
+
+      <!-- YOUR OWN VIDEOS -->
+
+      <div class="video-card">
+
+        <video controls poster="images/video1.jpg">
+
+          <source src="videos/video1.mp4" type="video/mp4">
+
+        </video>
+
+        <h3>Running Collection</h3>
+
+      </div>
+
+      <div class="video-card">
+
+        <video controls poster="images/video2.jpg">
+
+          <source src="videos/video2.mp4" type="video/mp4">
+
+        </video>
+
+        <h3>Basketball Performance</h3>
+
+      </div>
+
+      <div class="video-card">
+
+        <video controls poster="images/video3.jpg">
+
+          <source src="videos/video3.mp4" type="video/mp4">
+
+        </video>
+
+        <h3>Sportswear Lifestyle</h3>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FORM -->
+
+  <section id="form-section">
+
+    <div class="section-title">
+
+      <h2>Customer Inquiry Form</h2>
+
+      <p>
+        Fill out the form below for inquiries and support.
+      </p>
+
+    </div>
+
+    <div class="dark-form-container">
+
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfB_2PCJzzSKABFwUBuZ4rsyEzFqZ3_egPA-Vo2jCPFEFBXnQ/viewform?embedded=true">
+      </iframe>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer id="contact">
+
+    <div class="footer-grid">
+
+      <div>
+
+        <h2>361° Nepal</h2>
+
+        <p>
+          Sarba Siddhi Impex Pvt. Ltd.<br>
+          Official Authorized Dealer of 361° in Nepal.
+        </p>
+
+        <div class="socials">
+
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="#">
+            <i class="fab fa-tiktok"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+      <div>
+
+        <h2>Contact Info</h2>
+
+        <p>Email: info@361nepal.com.np</p>
+        <p>Phone: +977-9768591561</p>
+        <p>Kathmandu, Nepal</p>
+
+      </div>
+
+      <div>
+
+        <h2>Location Map</h2>
+
+        <iframe class="map-frame"
+          src="https://maps.google.com/maps?q=Kathmandu%20Nepal&t=&z=13&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+
+      </div>
+
+    </div>
+
+    <div class="copyright">
+
+      © 2026 Sarba Siddhi Impex Pvt. Ltd.
+      | www.361nepal.com.np
+
+    </div>
+
+  </footer>
+
+  <script>
+
+    // MOBILE MENU
+
+    const menuBtn =
+    document.getElementById('menuBtn');
+
+    const navLinks =
+    document.getElementById('navLinks');
+
+    menuBtn.addEventListener('click', () => {
+
+      navLinks.classList.toggle('active');
+
+    });
+
+    // FILTER
+
+    const filterButtons =
+    document.querySelectorAll('.filter-btn');
+
+    const galleryCards =
+    document.querySelectorAll('.gallery-card');
+
+    filterButtons.forEach(button => {
+
+      button.addEventListener('click', () => {
+
+        filterButtons.forEach(btn =>
+          btn.classList.remove('active'));
+
+        button.classList.add('active');
+
+        const filter =
+        button.getAttribute('data-filter');
+
+        galleryCards.forEach(card => {
+
+          if(filter === 'all'){
+
+            card.style.display = 'block';
+
+          }
+
+          else{
+
+            if(card.classList.contains(filter)){
+
+              card.style.display = 'block';
+
+            }
+
+            else{
+
+              card.style.display = 'none';
+
+            }
+
+          }
+
+        });
+
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>
